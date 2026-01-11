@@ -1,0 +1,24 @@
+#!name=KineMaster Premium (Isolated)
+#!desc=Unlock KineMaster subscription features (isolated module)
+#!author=duyvinh09
+#!howtouse=Shadowrocket
+#!icon=https://module-ios.vercel.app/assets/img/shadowrocket.webp
+
+# =========================
+# KINEMASTER ONLY MODULE
+# =========================
+
+[Script]
+# KineMaster Premium
+# hostname = api-account.kinemasters.com
+KineMaster = type=http-response, \
+pattern=^https:\/\/api-account\.kinemasters\.com\/v\d\/user\/subscribe$, \
+requires-body=true, \
+max-size=0, \
+timeout=60, \
+script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Kinemaster.js
+
+# =========================
+
+[MITM]
+hostname = api-account.kinemasters.com

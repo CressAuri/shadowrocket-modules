@@ -1,0 +1,10 @@
+#!name=Alight Motion Only (Optimized)
+#!desc=Alight Motion Premium unlock – minimal & stable
+#!author=yourname
+#!howtouse=Shadowrocket
+
+[Script]
+AlightMotion = type=http-response,pattern=^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses$,requires-body=true,max-size=131072,timeout=10,engine=jsc,script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/AlightMotion.js
+
+[MITM]
+hostname = us-central1-alight-creative.cloudfunctions.net
